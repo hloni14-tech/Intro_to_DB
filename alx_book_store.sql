@@ -50,6 +50,13 @@ CREATE TABLE orders (
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
+CREATE TABLE Order_Details (
+    "Order_Details", 
+    "quantity DOUBLE", 
+    "FOREIGN KEY (order_id) REFERENCES Orders(order_id)", 
+    "FOREIGN KEY (book_id) REFERENCES Books(book_id)
+) ENGINE=InnoDB;    
+
 CREATE TABLE order_items (
     order_item_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT NOT NULL,
