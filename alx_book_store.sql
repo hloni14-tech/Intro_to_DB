@@ -30,9 +30,10 @@ CREATE TABLE book_authors (
 
 CREATE TABLE customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    "Customers",customer_name VARCHAR(215),
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(215) NOT NULL UNIQUE,
     phone VARCHAR(30),
     address TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
