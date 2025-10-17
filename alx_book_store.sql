@@ -3,6 +3,7 @@ USE bookstore;
 
 CREATE TABLE authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
+    "Authors",author_name,
     name VARCHAR(255) NOT NULL,
     bio TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
