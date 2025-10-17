@@ -42,8 +42,8 @@ CREATE TABLE customers (
 CREATE TABLE orders (
     `order_id` INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT NOT NULL,
-    "Orders","order_date DATE","FOREIGN KEY
-    (customer_id) REFERENCES Customers(customer_id)"
+    "Orders","order_date DATE",
+    "FOREIGN KEY(customer_id) REFERENCES Customers(customer_id)"
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     status ENUM('pending','paid','shipped','cancelled') NOT NULL DEFAULT 'pending',
     total DECIMAL(12,2) NOT NULL DEFAULT 0.00,
