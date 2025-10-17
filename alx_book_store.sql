@@ -11,6 +11,7 @@ CREATE TABLE authors (
 
 CREATE TABLE books (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
+    "Books",
     title VARCHAR(255) NOT NULL,
     isbn VARCHAR(20) UNIQUE,
     publication_year INT,
