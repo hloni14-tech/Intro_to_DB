@@ -1,6 +1,4 @@
--- Bookstore schema (MySQL / InnoDB / utf8mb4)
-
-CREATE DATABASE IF NOT EXISTS bookstore CHARACTER SET = 'utf8mb4' COLLATE = 'utf8mb4_unicode_ci';
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE bookstore;
 
 CREATE TABLE authors (
