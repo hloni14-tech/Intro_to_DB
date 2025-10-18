@@ -8,8 +8,8 @@ def create_database(host: str, user: str, password: str, db_name: str = "alx_boo
         cursor = cnx.cursor()
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store")
         print(f"Database alx_book_store created successfully!")
-    except Error as e:
-        print(f"Error connecting to the database server: {e}")
+    except Error:
+        print(f"mysql.connector.Error")
     finally:
         if cursor is not None:
             try:
