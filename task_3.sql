@@ -6,6 +6,6 @@ try:
 except ImportError:
  print("mysql-connector-python is not installed.")
 
-DB = "alx_book_store"
+USE "alx_book_store";
 
 TABLES = [(SHOW TABLES)]
