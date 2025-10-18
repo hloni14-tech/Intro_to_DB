@@ -1,3 +1,5 @@
+import mysql.connector
+
 def create_database(host: str, user: str, password: str, db_name: str = "alx_book_store"):
     cnx = None
     cursor = None
