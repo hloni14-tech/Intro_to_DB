@@ -6,7 +6,7 @@ def create_database(host: str, user: str, password: str, db_name: str = "alx_boo
     try:
         cnx = mysql.connector.connect(host=host, user=user, password=password)
         cursor = cnx.cursor()
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS `{db_name}`")
+        cursor.execute(f"CREATE DATABASE IF NOT EXISTS `{alx_book_store}`")
         print(f"Database '{db_name}' created successfully!")
     except Error as e:
         print(f"Error connecting to the database server: {e}")
