@@ -8,4 +8,4 @@ except ImportError:
 
 DB = "alx_book_store"
 
-TABLES = [(SHOW, TABLES)]
+TABLES = [(SHOW TABLES)]
