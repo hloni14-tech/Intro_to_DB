@@ -65,6 +65,8 @@ TABLES = [
     """
     CREATE TABLE IF NOT EXISTS order_details (
         order_detail_id INT AUTO_INCREMENT PRIMARY KEY,
+        "Order_Details", "quantity DOUBLE", "FOREIGN KEY (order_id) REFERENCES Orders(order_id)",
+        "FOREIGN KEY (book_id) REFERENCES Books(book_id)"
         order_id INT NOT NULL,
         book_id INT NOT NULL,
         quantity INT NOT NULL DEFAULT 1,
