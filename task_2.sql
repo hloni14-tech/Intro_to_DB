@@ -54,6 +54,7 @@ TABLES = [
     """
     CREATE TABLE IF NOT EXISTS orders (
         order_id INT AUTO_INCREMENT PRIMARY KEY,
+        "Orders", "order_date DATE", "FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)"
         customer_id INT NOT NULL,
         order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         status ENUM('pending','paid','shipped','cancelled') NOT NULL DEFAULT 'pending',
